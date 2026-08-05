@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Samandar Oripov</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--[if lte IE 8]>
+    <script src="{{ url_for('static', filename='assets/js/html5shiv.js') }}"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/ie9.css') }}" />
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/ie8.css') }}" />
+    <![endif]-->
+
+    <noscript>
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" />
+    </noscript>
+</head>
+
+<body class="is-loading">
+
+<div id="wrapper">
+
+    <section id="main">
+
+        <header>
+            <span class="avatar">
+                <img src="{{ url_for('static', filename='images/smdr.jpeg') }}" width="100" alt="" />
+            </span>
+
+            <h1>Samandar Oripov</h1>
+            <p>Full-Stack Software Engineer</p>
+        </header>
+
+        <footer>
+            <ul class="icons">
+                <li><a href="#" class="fa-twitter">Twitter</a></li>
+                <li><a href="#" class="fa-instagram">Instagram</a></li>
+                <li><a href="#" class="fa-facebook">Facebook</a></li>
+            </ul>
+        </footer>
+
+    </section>
+
+    <footer id="footer">
+        <ul class="copyright">
+            <li>&copy; Samandar Oripov</li>
+        </ul>
+    </footer>
+
+</div>
+
+<script>
+    if ('addEventListener' in window) {
+        window.addEventListener('load', function() {
+            document.body.className =
+                document.body.className.replace(/\bis-loading\b/, '');
+        });
+
+        document.body.className +=
+            (navigator.userAgent.match(/(MSIE|rv:11\.0)/)
+            ? ' is-ie'
+            : '');
+    }
+</script>
+
+</body>
+</html>
+
